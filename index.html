@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-For</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description"> Simple survey form taking basic information.</p>
+        <form id="survey-form">
+            <div class="bio-data">
+                <label for="name" id="name-label">Name
+                </label>
+                <input type="text" id="name" placeholder="Enter Your Name" required />
+
+                <label for="email" id="email-label">E-mail
+                </label>
+                <input type="email" id="email" required placeholder="Enter Your E-mail" />
+
+                <label for="age" id="number-label"> Age (optional)
+                </label>
+                <input type="number" id="number" min="13" max="120" placeholder="Enter Your Age (optional)" />
+            </div>
+            <div class="mid-data">
+                <label for="dropdown">Which option best describes your current role</label>
+                <select id="dropdown" name="your-role">
+                    <option selected>Select current role</option>
+                    <option value="student">student </option>
+                    <option value="full-time-job">Full time job</option>
+                    <option value="full-time-lerner">full time learner </option>
+                    <option value="prefer-not-to-say">Prefer not to say </option>
+                    <option value="other"> other</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="rate">
+
+                <label class="rate-label" for="rate">Give rating to freeCodeCamp
+
+                    <label class="first-label">
+                        <input type="radio" name="rating" value="5">
+                        <p>Extreamly Good
+                        </p>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="4">
+                        <p>Good</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="3">
+                        <p> Need improvement</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="2">
+                        <p> Best Platform</p>
+                    </label>
+                    <label>
+                        <input type="radio" name="rating" value="1">
+                        <p> Worst Platform</p>
+                    </label>
+                </label>
+            </div>
+            <div class="favor">
+                <label for="best-feature">What is your favorite of freeCodeCamp?</label>
+                <select>
+                    <optgroup>Select an option
+                        <option value="challanges">Challanges</option>
+                        <option value="projects">Projects</option>
+                        <option value="community">Community</option>
+                        <option value="open-source">Open source</option>
+                    </optgroup>
+                </select>
+
+            </div>
+            <div class="feedback">
+                <label for="feedback" id="feedback">What would you like to improve more?
+                    <label>
+                        <input type="checkbox" value="front-end-project">
+                        Front-end project
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="back-end-project">
+                        Back-end project
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="data-visualization">
+                        Data visualization
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="challenges" />
+                        Challenges
+
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="open-source-contribution">
+                        Open Source Community
+
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="gitter-help-rooms">
+                        Gitter help rooms
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="videos">
+                        Videos
+                    </label>
+
+                    <label>
+                        <input type="checkbox" value="additional-course">
+                        Additional Courses
+                    </label>
+
+                </label>
+
+                <p>Any comment or suggestion</p>
+                <label for="comment">
+                    <textarea row="3" col="300" placeholder="Thanks"></textarea>
+                </label>
+
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>
